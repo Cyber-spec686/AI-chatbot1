@@ -4,6 +4,7 @@ This application is a simple web chatbot where you send messages through a brows
 The backend is built using Node.js + Express, and AI responses are obtained via the Hugging Face API.
 
 How the Application Works
+
 The user types a message in the chat interface in the browser.
 The frontend sends the message to the backend via the POST /chat endpoint.
 The server validates the message:
