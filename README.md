@@ -12,19 +12,44 @@ it must not be empty;
 maximum length is 2000 characters.
 The server sends a request to a Hugging Face chat model.
 The response is returned to the frontend and displayed in the chat window.
-Requirements
-Node.js (recommended: LTS version)
-npm
-Hugging Face API token (HUGGINGFACE_API_KEY or HF_TOKEN)
-Installation and Running
-Navigate to the project folder and install dependencies:
-npm install
-Create a .env file in the root of the project:
-HUGGINGFACE_API_KEY=your_token_here
-PORT=3000
-Start the server:
-npm start
-Open in your browser:
+
+Features
+
+Clean Bootstrap-based chat interface
+- Express backend with `/chat` and `/health` endpoints
+- Input validation and graceful error responses
+- Basic automate
+## Installation
+
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+2. Start the app:
+   ```bash
+   npm start
+   ```
+
+3. Open:
+   `http://localhost:3000`
+
+## Scripts
+
+- `npm start` - run the server
+- `npm test` - run automated tests
+
+## Project Structure
+
+```text
+.
+├── server.js
+├── server.test.js
+├── public/
+│   └── index.html
+├── package.json
+└── README.md
+```
 
 http://localhost:3000
 
